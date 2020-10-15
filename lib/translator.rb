@@ -16,7 +16,8 @@ require 'pry'
   emoticon_library
   end
 
-def get_japanese_emoticon
+def get_japanese_emoticon(data, emoticon)
+  binding.pry 
   # code goes here
 end
 
