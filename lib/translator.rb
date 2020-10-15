@@ -22,7 +22,7 @@ def get_japanese_emoticon(data, emoticon)
     if emoticons[key][:english] == emoticon 
       return key
   end 
-  binding.pry 
+  #binding.pry 
 end 
  "Sorry, that emoticon was not found"
 end
