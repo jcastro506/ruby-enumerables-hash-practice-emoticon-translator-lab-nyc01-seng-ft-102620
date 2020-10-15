@@ -20,6 +20,7 @@ def get_japanese_emoticon(data, emoticon)
   emoticons = load_library(data)
   emoticons.each do |key, value|
     if emoticons[key][:english] == emoticon 
+      binding.pry 
       return key 
   end 
   #binding.pry 
