@@ -17,6 +17,8 @@ require 'pry'
   end
 
 def get_japanese_emoticon(data, emoticon)
+  emoticons = load_library(data)
+  emoticons.each do |key, value|
   binding.pry 
   # code goes here
 end
