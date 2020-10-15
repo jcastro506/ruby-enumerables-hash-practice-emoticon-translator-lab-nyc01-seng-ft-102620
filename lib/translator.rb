@@ -19,9 +19,12 @@ require 'pry'
 def get_japanese_emoticon(data, emoticon)
   emoticons = load_library(data)
   emoticons.each do |key, value|
+    if emoticons[key][:english] == emoticon 
+      return key
   end 
   binding.pry 
-  # code goes here
+end 
+ "Sorry, that emoticon was not found"
 end
 
 def get_english_meaning(data, emoticon)
